@@ -1,0 +1,13 @@
+apiVersion: triggers.tekton.dev/v1alpha1
+kind: TriggerBinding
+metadata:
+  creationTimestamp: null
+  name: marek-dev-app-taxi-taxi-binding
+  namespace: marek-cicd
+spec:
+  params:
+  - name: imageRepo
+    value: quay.io/mmartofel/cicd
+  - name: tlsVerify
+    value: "true"
+status: {}

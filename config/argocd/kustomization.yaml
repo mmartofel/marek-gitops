@@ -1,0 +1,6 @@
+resources:
+- argo-app.yaml
+- cicd-app.yaml
+- marek-dev-app-taxi-app.yaml
+- marek-dev-env-app.yaml
+- marek-stage-env-app.yaml

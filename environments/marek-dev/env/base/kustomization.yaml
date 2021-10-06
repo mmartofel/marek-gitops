@@ -1,0 +1,4 @@
+resources:
+- argocd-admin.yaml
+- marek-dev-environment.yaml
+- marek-dev-rolebinding.yaml

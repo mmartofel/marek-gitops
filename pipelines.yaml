@@ -1,0 +1,29 @@
+config:
+  argocd:
+    namespace: openshift-gitops
+  pipelines:
+    name: marek-cicd
+environments:
+- apps:
+  - name: app-taxi
+    services:
+    - name: taxi
+      pipelines:
+        integration:
+          bindings:
+          - marek-dev-app-taxi-taxi-binding
+          - github-push-binding
+      source_url: https://github.com/mmartofel/taxi.git
+      webhook:
+        secret:
+          name: webhook-secret-marek-dev-taxi
+          namespace: marek-cicd
+  name: marek-dev
+  pipelines:
+    integration:
+      bindings:
+      - github-push-binding
+      template: app-ci-template
+- name: marek-stage
+gitops_url: https://github.com/mmartofel/marek-gitops.git
+version: 1

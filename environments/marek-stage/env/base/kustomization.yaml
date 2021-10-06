@@ -1,0 +1,3 @@
+resources:
+- argocd-admin.yaml
+- marek-stage-environment.yaml
