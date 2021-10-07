@@ -9,5 +9,5 @@ spec:
   - name: imageRepo
     value: quay.io/mmartofel/cicd
   - name: tlsVerify
-    value: "true"
+    value: "false"
 status: {}
