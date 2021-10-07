@@ -7,7 +7,7 @@ metadata:
 spec:
   params:
   - name: imageRepo
-    value: quay.io/mmartofel/cicd
+    value: quay.io/mmartofe/cicd
   - name: tlsVerify
-    value: "false"
+    value: "true"
 status: {}
